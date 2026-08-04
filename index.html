@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Básico -->
+  <title>AI Hub | Directorio de Asistentes y Herramientas de Inteligencia Artificial</title>
+  <meta name="description" content="Accede y compara de forma rápida las mejores plataformas y asistentes de Inteligencia Artificial para programación, imagen, video y audio en un solo lugar.">
+  <meta name="keywords" content="AI Hub, inteligencia artificial, asistentes IA, herramientas de IA, IA para programación, generador de imágenes IA, IA de video, IA de audio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tudominio.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tudominio.com/">
+  <meta property="og:title" content="AI Hub | Directorio de Asistentes de Inteligencia Artificial">
+  <meta property="og:description" content="Accede rápidamente a las principales plataformas de IA desde un único lugar. Herramientas para programación, imagen, video y audio.">
+  <meta property="og:image" content="https://tudominio.com/assets/og-image.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://tudominio.com/">
+  <meta name="twitter:title" content="AI Hub | Directorio de Asistentes de Inteligencia Artificial">
+  <meta name="twitter:description" content="Accede rápidamente a las principales plataformas de IA desde un único lugar. Herramientas para programación, imagen, video y audio.">
+  <meta name="twitter:image" content="https://tudominio.com/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Preconnect para rendimiento (Rendimiento = SEO) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Terceros: Bootstrap & Fuentes -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Datos Estructurados (Schema.org) para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI Hub",
+    "url": "https://tudominio.com/",
+    "description": "Directorio y panel de acceso rápido a herramientas y asistentes de Inteligencia Artificial."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Escenario Atmosférico -->
+  <div class="scenic-background" aria-hidden="true"></div>
+  <div class="scenic-background__mesh" aria-hidden="true"></div>
+  <div id="particles-host" aria-hidden="true"></div>
+
+  <!-- Barra de navegación -->
+  <header class="navbar nav-header fixed-top py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="/" class="nav-header__brand text-decoration-none" title="Página principal de AI Hub">
+        <div class="nav-header__logo"><i class="bi bi-cpu-fill" aria-hidden="true"></i></div>
+        <span class="nav-header__title">AI&nbsp;Hub</span>
+      </a>
+      <span class="nav-header__status" id="connection-status-badge">
+        <span class="nav-header__pulse-dot" aria-hidden="true"></span>
+        <span id="connection-status-text">Cargando servicios...</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- Encabezado Principal (Hero Section) -->
+  <section class="hero-section">
+    <div class="container">
+      <span class="hero-section__badge"><i class="bi bi-stars" aria-hidden="true"></i>&nbsp;Panel de acceso rápido</span>
+      <h1 class="hero-section__title">Directorio de Asistentes de Inteligencia Artificial</h1>
+      <p class="hero-section__description">Explora y accede rápidamente a las principales plataformas de IA para programación, imagen, video y audio desde un solo lugar.</p>
+    </div>
+  </section>
+
+  <!-- Barra de Filtros Dinámicos -->
+  <nav class="filter-section" id="filter-container" aria-label="Filtro de categorías de IA">
+    <button class="filter-btn active" data-filter="all">Todas</button>
+    <button class="filter-btn" data-filter="programacion">Programación</button>
+    <button class="filter-btn" data-filter="imagen">Imagen</button>
+    <button class="filter-btn" data-filter="video">Video</button>
+    <button class="filter-btn" data-filter="audio">Audio</button>
+  </nav>
+
+  <!-- Contenedor Principal de Tarjetas -->
+  <main class="showcase-grid">
+    <div class="container">
+      <div class="row g-4" id="cards-container">
+        <!-- Inyección Dinámica de Tarjetas -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-copyright">
+    <p>&copy; AI Hub — Plataforma diseñada para una navegación rápida entre asistentes de IA.</p>
+  </footer>
+
+  <!-- Dependencias externas y scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/scripts.js" defer></script>
+</body>
+
+</html>
